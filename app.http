@@ -1,0 +1,26 @@
+send Request 
+GET http://localhost:3000/todos/?status=TO%20DO
+###
+send Request 
+GET http://localhost:3000/todos/:todoId/
+### 
+send Request 
+GET http://localhost:3000/agenda/
+###
+send Request 
+POST http://localhost:3000/todos/
+
+{
+ "id": 6,
+ "todo": "Finalize event theme",
+ "priority": "LOW",
+ "status": "TO DO",
+ "category": "HOME",
+ "dueDate": "2021-02-22"
+}
+###
+send Request 
+PUT  http://localhost:3000/todos/:todoId/ 
+###
+send Request 
+DELETE http://localhost:3000/todos/:todoId/ 
